@@ -3,7 +3,9 @@ import { searchPexels } from "../../../helpers/searchImages";
 import Container from "../../../components/Container";
 import ImageCards from "../../../components/ImageCards";
 import SearchHeader from "../../../components/SearchHeader";
-function searchPage({ searchResults, searchQuery }) {
+import Pagination from "../../../components/Pagination";
+
+function searchPage({ searchResults, page, searchQuery }) {
   const { total_pages, results } = searchResults;
   return (
     <Container>
@@ -23,6 +25,12 @@ function searchPage({ searchResults, searchQuery }) {
             />
           ))}
       </div>
+      <Pagination
+        total_pages={total_pages}
+        imageSource="pexels"
+        currentPage={page}
+        searchQuery={searchQuery}
+      />
     </Container>
   );
 }
@@ -37,6 +45,7 @@ export async function getServerSideProps(context) {
     props: {
       searchResults,
       searchQuery: q,
+      page,
     },
   };
 }
