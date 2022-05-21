@@ -4,6 +4,7 @@ import React from "react";
 import bg from "../images/bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import SearchBar from "../components/SearchBar";
 export default function Home() {
   return (
     <main className="relative flex h-[calc(100vh-4rem)] w-full items-center justify-center px-5 lg:px-0">
@@ -25,18 +26,8 @@ export default function Home() {
         <p className="mx-auto mb-10 mt-5 max-w-[500px]">
           Get images from the best sources in one place.
         </p>
-
-        <form className="flex w-full flex-wrap items-center justify-center  ">
-          <input
-            type="text"
-            className="my-2 w-full border-0 py-4 px-3 text-zinc-500 outline-none lg:my-0 lg:w-3/4"
-          />
-          <input
-            type="submit"
-            value="SEARCH"
-            className="w-full cursor-pointer bg-sky-500 px-5 py-4 font-semibold text-white transition-all ease-in-out hover:bg-sky-600 lg:w-1/4 lg:px-10 "
-          />
-        </form>
+        {/* search component */}
+        <SearchBar />
       </div>
     </main>
   );
