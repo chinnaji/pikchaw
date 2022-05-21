@@ -3,8 +3,9 @@ import SearchHeader from "../../../components/SearchHeader";
 import { searchUnsplash } from "../../../helpers/searchImages";
 import Container from "../../../components/Container";
 import ImageCards from "../../../components/ImageCards";
+import Pagination from "../../../components/Pagination";
 
-function index({ searchResults, searchQuery }) {
+function index({ searchResults, searchQuery, page }) {
   // destructure total pages and resuts from searchResults param
   const { total_pages, results } = searchResults;
   return (
@@ -27,6 +28,12 @@ function index({ searchResults, searchQuery }) {
             )
           )}
       </div>
+      <Pagination
+        total_pages={total_pages}
+        imageSource="unsplash"
+        currentPage={page}
+        searchQuery={searchQuery}
+      />
     </Container>
   );
 }
@@ -41,6 +48,7 @@ export async function getServerSideProps(context) {
     props: {
       searchResults,
       searchQuery: q,
+      page,
     },
   };
 }
