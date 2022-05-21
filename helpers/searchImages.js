@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// unsplash query function
 export async function searchUnsplash(page, query) {
   // search images on unsplash based on search query
   const getUnsplashSearchResults = await axios.get(
@@ -16,6 +17,25 @@ export async function searchUnsplash(page, query) {
   return response;
 }
 
+// pixabay query function
+export async function searchPixaBay(page, query) {
+  // search images on pixabay based on search query
+  const getUnsplashSearchResults = await axios.get(
+    `https://pixabay.com/api/?key=${process.env.pixabay_api_key}&q=${query}&image_type=photo&page=${page}`
+  );
+  // pixabay maximum pages is 26
+  const total_pages = 26;
+  //   format response  and rename
+  const {
+    data: { hits: results },
+  } = getUnsplashSearchResults;
+  const response = { total_pages, results };
+  // console.log(response);
+
+  return response;
+}
+
+// pexels query function
 export async function searchPexels(page, query) {
   // search images on pexel based on search query
   const getPexelsSearchResults = await axios.get(
