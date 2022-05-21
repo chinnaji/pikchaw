@@ -39,7 +39,7 @@ export async function searchPixaBay(page, query) {
 export async function searchPexels(page, query) {
   // search images on pexel based on search query
   const getPexelsSearchResults = await axios.get(
-    `https://api.pexels.com/v1/search?query=${query}&&per_page=20page=${page}`,
+    `https://api.pexels.com/v1/search?query=${query}&per_page=20&page=${page}`,
     {
       headers: {
         Authorization: process.env.pexels_api_key,

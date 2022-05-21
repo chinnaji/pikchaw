@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function ImageCards({ src, alt, width, height, blurData, sourceLink }) {
   return (
-    <figure className="py-4 [break-inside:avoid]">
+    <figure className="py-2 [break-inside:avoid]">
       <a href={sourceLink}>
         <Image
           className="rounded-md"

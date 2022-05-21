@@ -23,7 +23,7 @@ export default function Home() {
           A middleground for your next inspiration
         </h1>
         <p className="mx-auto mb-10 mt-5 max-w-[500px]">
-          Get images from the best sources in one place.
+          Get images from the best sources all in one place.
         </p>
         {/* search component */}
         <SearchBar />
