@@ -1,25 +1,15 @@
 import React from "react";
-import { useRouter } from "next/router";
-import axios from "axios";
+import SearchHeader from "../../../components/SearchHeader";
 import { searchUnsplash } from "../../../helpers/searchImages";
 import Container from "../../../components/Container";
 import ImageCards from "../../../components/ImageCards";
-import ToggleImageSource from "../../../components/ToggleImageSource";
 
 function index({ searchResults, searchQuery }) {
   // destructure total pages and resuts from searchResults param
   const { total_pages, results } = searchResults;
   return (
     <Container>
-      <h1 className="text-xl my-5 font-semibold text-center">
-        Showing results for - <u>{searchQuery}</u>
-      </h1>
-      <h1 className="text-xl my-5 font-semibold text-center">
-        total pages - <u>{total_pages}</u>
-      </h1>
-
-      {/* component for toogling image source */}
-      <ToggleImageSource currentSource="unsplash" searchQuery={searchQuery} />
+      <SearchHeader currentSource="unsplash" searchQuery={searchQuery} />
 
       <div className="gap-4 pt-2 columns-2xs [column-fill:_balance]">
         {searchResults &&

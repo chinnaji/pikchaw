@@ -1,13 +1,13 @@
-import React from 'react'
-import logo from '../images/logo.svg'
-import Image from 'next/image'
-import { FaGithub } from 'react-icons/fa'
-import Link from 'next/link'
+import React from "react";
+import logo from "../images/logo.svg";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 function Navbar() {
   return (
     //   persistent page navigation bar
-    <header className="shadow-xs sticky top-0 z-50 h-16 w-full  border-b bg-white py-2 text-zinc-800">
+    <header className="shadow-xs  top-0 z-50 h-16 w-full  border-b bg-white py-2 text-zinc-800">
       <nav className=" mx-auto flex max-w-[1200px] items-center justify-between px-3 lg:px-0 ">
         {/* pikchaw logo ... links to homepage */}
         <Link href="/" passHref>
@@ -31,7 +31,7 @@ function Navbar() {
         </a>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
