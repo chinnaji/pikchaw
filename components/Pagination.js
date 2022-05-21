@@ -9,7 +9,7 @@ function Pagination({ total_pages, currentPage, imageSource, searchQuery }) {
   useEffect(() => {
     setStart(currentPage - 1);
     setSearchEnd(+currentPage + 3);
-  }, []);
+  }, [currentPage]);
   return (
     <div className="flex border-t pt-5 flex-wrap justify-center my-10 text-sm md:text-base">
       {/* navigate to previous page */}
@@ -21,6 +21,7 @@ function Pagination({ total_pages, currentPage, imageSource, searchQuery }) {
       {/* {total_pages}-{currentPage} */}
       {items.slice(start, end).map((item, index) => (
         <Link
+          key={Math.random()}
           href={`/search/${imageSource}?q=${searchQuery}&page=${
             index + +currentPage
           }`}
