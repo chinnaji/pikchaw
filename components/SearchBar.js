@@ -18,7 +18,7 @@ function SearchBar() {
         type="text"
         className="my-2 w-full border-0 py-4 px-3 text-zinc-500 outline-none lg:my-0 lg:w-3/4"
       />
-      <Link href={`/search/${searchValue}?page=1`}>
+      <Link href={`/search/unsplash?q=${searchValue}&page=1`}>
         <input
           required
           type="submit"
