@@ -3,7 +3,6 @@ import Head from "next/head";
 import React from "react";
 import bg from "../images/bg.jpg";
 import Image from "next/image";
-import Link from "next/link";
 import SearchBar from "../components/SearchBar";
 export default function Home() {
   return (
