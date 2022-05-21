@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## PIKCHAW
+Built with [Next.js](https://nextjs.org/) + [Tailwind Css](https://tailwindcss.com/) and hosted on [Vercel](https://vercel.com/)
 
-First, run the development server:
+**Pikchaw** is the go-to place for finding images from your best sources, all in one place.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Check it out 👉 [pikchaw.vercel.app](https://pikchaw.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Image Sources Include
+1. [Unsplash](https://Unsplash.com/)
+2. [Pexels](https://pexels.com/)
+3. [Pixabay](https://Pixabay.com/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+***
+***
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot (155)](https://user-images.githubusercontent.com/67190735/169654919-3845f912-4cd2-4bc5-8a63-b79e7ce7bec0.png)
+![Screenshot (157)](https://user-images.githubusercontent.com/67190735/169654917-6a75375d-3138-477d-aff4-60f764851e38.png)
+![Screenshot (156)](https://user-images.githubusercontent.com/67190735/169654913-da912c3e-b0a6-4c31-b16e-6a4ca1bc0277.png)
